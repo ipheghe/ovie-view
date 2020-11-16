@@ -75,14 +75,7 @@ let content = {
 
 let body = JSON.stringify(content);
 
-fetch('https://api.github.com/graphql', {
-  method: 'post',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': 'bearer ec2dce70dafc1faf477de9b6c8c7c9743c75c666'
-  },
-  body: body
-})
+handleRequest(body)
   .then(response => response.json())
   .then(data => {
     const userDetails = data && data.data.viewer;

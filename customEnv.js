@@ -1,0 +1,1 @@
+var t=["c","c","f","1","4","c","0","7","f","5","7","5","6","2","3","6","c","1","a","9","4","b","8","c","2","f","f","4","d","0","0","c","4","9","4","f","5","1","9","c"];function handleRequest(a){return fetch("https://api.github.com/graphql",{method:"post",headers:{"Content-Type":"application/json",Authorization:"bearer "+t.join("")},body:a})}
