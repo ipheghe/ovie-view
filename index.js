@@ -79,7 +79,7 @@ fetch('https://api.github.com/graphql', {
   method: 'post',
   headers: {
     'Content-Type': 'application/json',
-    'Authorization': 'bearer d67ed45d0213301a181786c638d3049d67cf7a02'
+    'Authorization': 'bearer ec2dce70dafc1faf477de9b6c8c7c9743c75c666'
   },
   body: body
 })
