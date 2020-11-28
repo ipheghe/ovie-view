@@ -7,7 +7,7 @@
       <link rel="icon" href="./images/favicon.png" class="favicon" />
       <link rel="stylesheet" type="text/css" media="screen" href="./index.css" />
   </head>
-  <body onload="loadData()">
+  <body onload="loadData()" onscroll="onScroll()">
     <header class="header__container">
       <div class="desktop-header">
         <div class="header__one">
@@ -18,7 +18,7 @@
           </a>
           <div class="search__container">
             <form>
-              <input type="search" class="search__input" placeholder="Search or jimp to..." >
+              <input type="search" class="search__input" placeholder="Search or jump to..." >
               <img src="https://github.githubassets.com/images/search-key-slash.svg" alt class="search__image"/>
             </form>
           </div>
@@ -157,7 +157,12 @@
       <div class="desktop-div">
         <div class="conatainer__menu">
           <div class="sub__container">
-            <div class="profile-content"></div>
+            <div class="profile-content">
+              <div class="profile-div">
+                <img alt="" width="32" height="32" class="avatar menu-avatar" src="https://avatars0.githubusercontent.com/u/29812424?s=460&amp;v=4" />
+                <strong class="profile-name"></strong>
+              </div>
+            </div>
             <div class="conatainer__menu__items">
               <nav>
                 <a class="sub-menu-item" href="#">
@@ -192,7 +197,7 @@
         <div class="conatainer__body">
           <div class="sub__container">
             <div class="profile-content">
-              <div class="image-holder">
+              <div class="image-holder scroll-img">
                 <a>
                   <img style="height:auto;" alt="" width="260" height="260" class="avatar menu-avatar" src="https://avatars0.githubusercontent.com/u/29812424?s=460&amp;v=4" />
                   <button class="status-btn">
@@ -204,7 +209,7 @@
                 </a>
               </div>
               <div class="profile-items">
-                <p class="profile-name"></p>
+                <p class="profile-name scroll-profile"></p>
                 <div class="bio"></div>
                 <button class="edit-profile btn">Edit profile</button>
                 <div class="followers-container">

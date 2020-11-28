@@ -179,5 +179,19 @@ handleRequest(body)
       });
     }
   });
+};
+
+const onScroll = () => {
+  const profileElement = document.getElementsByClassName('scroll-profile')[0];
+  const profileDivElement = document.getElementsByClassName('profile-div')[0];
+  if (profileElement) {
+    const profileTextPosition = profileElement.getBoundingClientRect();
+    if(profileTextPosition.bottom < 40) {
+      profileDivElement.style.display = 'flex';
+    } else {
+      profileDivElement.style.display = 'none';
+    }
+  }
+
 }
 

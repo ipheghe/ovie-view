@@ -225,7 +225,6 @@ body {
     padding: 0 16px;
     width: 100%;
     min-width: 100%;
-    margin-top: -32px;
 }
 
 .conatainer__menu__items {
@@ -581,6 +580,32 @@ input.search-repo {
     color: #24292e;
 }
 
+.profile-div {
+    justify-content: flex-start;
+    align-items: center;
+    display: none;
+    height: 100%;
+}
+
+.profile-div img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    max-height: 32px;
+    margin-right: 8px;
+}
+
+.profile-div .profile-name {
+    font-weight: 600;
+    font-size: 14px;
+    color: #24292e;
+}
+
+.scroll-img {
+    margin-top: -32px;
+}
+
+
 @media screen and (min-width: 2000px) {
     .sub__container {
         max-width: 65%;
@@ -685,5 +710,9 @@ input.search-repo {
 
     .profile-content {
         margin-top: unset;
+    }
+
+    .profile-div {
+        display: none;
     }
 }
