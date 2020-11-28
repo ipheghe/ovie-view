@@ -142,7 +142,7 @@ handleRequest(body)
               </div>
               <div class="info-content">
                 ${item.primaryLanguage ? item.primaryLanguage.name && `<span class="info-text">
-                <span class="repo-language-color" style="color: ${item.primaryLanguage.color};"></span>
+                <span class="repo-language-color" style="background-color: ${item.primaryLanguage.color};"></span>
                 <span>${item.primaryLanguage.name}</span>
               </span>` : ''}
                 ${item.parent ? `<a class="info-text" href=${item.parent.url}>
