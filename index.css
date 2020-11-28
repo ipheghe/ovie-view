@@ -211,7 +211,7 @@ body {
     margin: 0 auto;
     padding: 0 32px;
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 25% 75%;
     max-width: 80%;
 }
 
@@ -606,9 +606,19 @@ input.search-repo {
 }
 
 
+
+
 @media screen and (min-width: 2000px) {
     .sub__container {
         max-width: 65%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .sub__container {
+        margin: 0;
+        padding: 0 16px;
+        max-width: 100%;
     }
 }
 
